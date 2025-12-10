@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurso Real Madrid</title>
+</head>
+<body>
+    <header>
+        <!-- título, logo y frase célebre -->
+        <h1><b>Real Madrid FanPage</b></h1>
+            <img src="images/real_madrid_logo.png" width="100" height="150" alt="logo madrid">
+                <br><h2><b><i>Historia que tú hiciste, historia por hacer</i></b></h2></br>
+                    <!-- audio reproduciéndose en bucle -->
+                    <audio src="media/madridpiano.mp3" autoplay></audio>
+    </header>
+    <nav>
+        <!-- lista ordenada con enlaces entre páginas y a contenidos de la misma  -->
+        <ul>
+            <li><a href ="index.html" target="_blank">Inicio</a></li>
+            <li><a href ="historia.html" target="_blank">Historia del club</a></li>
+            <li><a href ="multimedia.html" target="_blank">Momentos para el recuerdo</a></li>
+            <li><a href ="tabla.html" target="_blank">Estadísticas</a></li>
+            <li><a href ="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h3>¡¡Gana una camiseta con nosotros!!</h3>
+            <p>Rellena este formulario para participar en un sorteo a nivel nacional de una camiseta personalizada del madrid de la temporada 25/26</p>
+                <article>
+                    <form>     
+                        <fieldset>
+                            <!-- dividimos el formulario en cajas según el contenido -->
+                            <legend><b>Información básica</b></legend>
+                                <!-- inputs básicos como text o tel -->
+                                <label for="nombre">Nombre completo:</label>
+                                <input type="text" placeholder="Ej: Javier López" name="nombre" maxlength="35" required><br></br>
+                                <label for="correo">Correo electrónico:</label>
+                                <input type="email" placeholder="ejemplo@correo.com" name="correo" required><br></br>
+                                <!-- estamos usando html 5 por lo que la validación del correo es automática -->
+                                <label for="teléfono">Teléfono:</label>
+                                <input type="tel" placeholder="Ej: 664987264" name="teléfono" min="9" max="9" required><br></br>
+                                <label for="edad">Edad (mín 18):</label>
+                                <input type="number" placeholder="Ej: 25" min="18" max="100" name="edad" required><br></br>
+                                <label for="género" required>Género:</label>
+                                    <!-- botones de una única opción -->
+                                    <input type="radio" name="género">Masculino
+                                    <input type="radio" name="género">Femenino
+                                    <input type="radio" name="género">Otro<br></br>
+                                <label for="datos">Acepto el tratamiento de mis datos:</label>
+                                    <input type="checkbox" name="datos" required>
+
+                        </fieldset>
+                        <fieldset>
+                            <legend><b>Información personal</b></legend>
+                                <label for="interés">Interés en otros deportes:</label>
+                                    <!-- elección múltiple o ninguna -->
+                                    <input type="checkbox" name="interés">Baloncesto
+                                    <input type="checkbox" name="interés">Tenis
+                                    <input type="checkbox" name="interés">Ciclismo
+                                    <input type="checkbox" name="interés">Balonmano
+                                    <input type="checkbox" name="interés">Motor
+                                    <input type="checkbox" name="interés">Atletismo<br><br>
+                                <label for="Estudios" required>Estudios realizados:</label>
+                                    <select name="Estudios">
+                                        <!-- lista desplegable de opciones. Opciones agrupadas en categorías -->
+                                        <optgroup label="Instituto">
+                                            <option>ESO</option>
+                                            <option>Bachillerato</option>
+                                        </optgroup>
+                                        <optgroup label="Formación profesional">
+                                            <option>FP Básica</option>
+                                            <option>Grado Medio</option>
+                                            <option>Grado Superior</option>
+                                        </optgroup>
+                                        <optgroup label="Universidad">
+                                            <option>Grado</option>
+                                            <option>Master</option>
+                                            <option>Doctorado</option>
+                                        </optgroup>
+                                    </select><br><br>
+                                <label for="como" required>¿Cómo nos conociste?:</label><br><br>
+                                    <!-- cuadros de texto amplios -->
+                                    <textarea name="como"></textarea><br><br>
+                                <label for="por" required>¿Por qué eres del Madrid?:</label><br><br>
+                                    <textarea name="por"></textarea><br><br>
+                                <label for="camiseta" required>Nombre y dorsal que quieres en la camiseta:</label><br><br>
+                                    <textarea name="camiseta"></textarea><br><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend><b>Complementaria</b></legend>
+                                <!-- hora y fecha juntas con un solo input -->
+                                <label for="date">Fecha y hora:</label>
+                                    <input type="datetime-local" name="date" required><br></br>
+                                <label for="comunidad" required>Comunidad Autónoma:</label>
+                                    <select name="comunidad">
+                                            <!-- lista desplegable de opciones -->
+                                            <option>Andalucía</option>
+                                            <option>Canarias</option>
+                                            <option>Baleares</option>
+                                            <option>Comunidad Valenciana</option>
+                                            <option>País Vasco</option>
+                                            <option>Galicia</option>
+                                            <option>Aragón</option>
+                                            <option>Asturias</option>
+                                            <option>Cantabria</option>
+                                            <option>Castilla La Mancha</option>
+                                            <option>Castilla y León</option>
+                                            <option>Cataluña</option>
+                                            <option>Extremadura</option>
+                                            <option>Madrid</option>
+                                            <option>Murcia</option>
+                                            <option>Navarra</option>
+                                            <option>La Rioja</option>
+                                            <option>Ceuta</option>
+                                            <option>Melilla</option>
+                                    </select>
+                        </fieldset>
+                        <fieldset>
+                            <legend><b>Enviar formulario</b></legend>
+                            <!-- enviar y reestablecer el form -->
+                            <label for="submit"></label>
+                                <input type="submit" name="submit" value="Enviar formulario" required>
+                            <label for="reset"></label>
+                                <input type="reset" name="reset" value="Limpiar selección" required>
+                        </fieldset>
+    </form>
+            </article>
+    </section>
+    <!-- contacto con correo, teléfono y enlaces insertados en imágenes -->
+    <footer id="contacto">
+        <h3>Contacto</h3>
+        <a href="mailto:jgarleo132g@g.educaand.es" target="_blank">Correo de contacto:jgarleo132g@g.educaand.es</a>
+        <p>Teléfono de contacto:664789230</p>
+        <a href="https://www.instagram.com/realmadrid" target="_blank"><img src="images/insta_logo.png" width="40" height="40" alt="logo instagram"></a>
+        <a href="https://x.com/realmadrid" target="_blank"><img src="images/x_logo.png" width="40" height="40" alt="logo twitter"></a>
+        <a href="https://www.tiktok.com/@realmadrid?lang=es" target="_blank"><img src="images/tiktok_logo.png" width="40" height="40" alt="logo tik tok"></a>
+        <a href="https://www.facebook.com/RealMadrid/?locale=es_ES" target="_blank"><img src="images/facebook_logo.png" width="40" height="40" alt="logo facebook"></a>
+        <a href="https://www.youtube.com/realmadrid" target="_blank"><img src="images/youtube_logo.png" width="40" height="40" alt="logo youtube"></a>
+        <p>Copyright© 2025. Designed by BORJU</p>
+    </footer>
+</body>
+</html>
