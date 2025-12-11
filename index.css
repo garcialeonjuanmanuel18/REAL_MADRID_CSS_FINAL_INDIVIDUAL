@@ -55,6 +55,7 @@ a{
     height:20%;
     margin-left:10%;
     margin-right:10%;
+    margin-bottom: 1%;
     padding-top:1%;
     background-color:rgb(255, 255, 255);
     border-top-right-radius: 20%;
@@ -104,6 +105,10 @@ padding-top:1%;
 padding-bottom: 1%;
 border-bottom-right-radius: 20%;
 border-top-left-radius: 20%;
+}
+
+.h1header, .h2header{
+font-size:200%;
 }
 
 
