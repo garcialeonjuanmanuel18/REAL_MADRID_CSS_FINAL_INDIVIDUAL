@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concurso Real Madrid</title>
+    <link rel="stylesheet" href="formulario.css" />
 </head>
 <body>
     <header>
@@ -14,15 +15,18 @@
                     <!-- audio reproduciéndose en bucle -->
                     <audio src="media/madridpiano.mp3" autoplay></audio>
     </header>
-    <nav>
-        <!-- lista ordenada con enlaces entre páginas y a contenidos de la misma  -->
-        <ul>
+    <!-- lista ordenada con enlaces entre páginas y a contenidos de la misma  -->
+   <nav class="navheader">
+        <ul class="enlaces">
             <li><a href ="index.html" target="_blank">Inicio</a></li>
             <li><a href ="historia.html" target="_blank">Historia del club</a></li>
             <li><a href ="multimedia.html" target="_blank">Momentos para el recuerdo</a></li>
             <li><a href ="tabla.html" target="_blank">Estadísticas</a></li>
             <li><a href ="#contacto">Contacto</a></li>
         </ul>
+        <div class="navgihun">
+            <img class="gihun" src="images/gihun.jpeg" width="200" alt="gihun celebrando un gol del madrid">
+        </div>
     </nav>
     <section>
         <h3>¡¡Gana una camiseta con nosotros!!</h3>
@@ -128,16 +132,24 @@
             </article>
     </section>
     <!-- contacto con correo, teléfono y enlaces insertados en imágenes -->
+   <div class="footercontacto">
+        <h3 class="h3footer">Contacto</h3>
+    </div>
     <footer id="contacto">
-        <h3>Contacto</h3>
-        <a href="mailto:jgarleo132g@g.educaand.es" target="_blank">Correo de contacto:jgarleo132g@g.educaand.es</a>
-        <p>Teléfono de contacto:664789230</p>
-        <a href="https://www.instagram.com/realmadrid" target="_blank"><img src="images/insta_logo.png" width="40" height="40" alt="logo instagram"></a>
-        <a href="https://x.com/realmadrid" target="_blank"><img src="images/x_logo.png" width="40" height="40" alt="logo twitter"></a>
-        <a href="https://www.tiktok.com/@realmadrid?lang=es" target="_blank"><img src="images/tiktok_logo.png" width="40" height="40" alt="logo tik tok"></a>
-        <a href="https://www.facebook.com/RealMadrid/?locale=es_ES" target="_blank"><img src="images/facebook_logo.png" width="40" height="40" alt="logo facebook"></a>
-        <a href="https://www.youtube.com/realmadrid" target="_blank"><img src="images/youtube_logo.png" width="40" height="40" alt="logo youtube"></a>
-        <p>Copyright© 2025. Designed by BORJU</p>
+        <div class="cajasfooter1">
+            <a href="mailto:jgarleo132g@g.educaand.es" target="_blank">Correo de contacto:jgarleo132g@g.educaand.es</a>
+            <p>Teléfono de contacto:664789230</p>
+        </div>
+        <div class="cajasfooter2">
+            <a class="enlacesfooter" href="https://www.instagram.com/realmadrid" target="_blank"><img src="images/insta_logo.png" width="40" height="40" alt="logo instagram"></a>
+            <a class="enlacesfooter" href="https://x.com/realmadrid" target="_blank"><img src="images/x_logo.png" width="40" height="40" alt="logo twitter"></a>
+            <a class="enlacesfooter" href="https://www.tiktok.com/@realmadrid?lang=es" target="_blank"><img src="images/tiktok_logo.png" width="40" height="40" alt="logo tik tok"></a>
+            <a class="enlacesfooter" href="https://www.facebook.com/RealMadrid/?locale=es_ES" target="_blank"><img src="images/facebook_logo.png" width="40" height="40" alt="logo facebook"></a>
+            <a class="enlacesfooter" href="https://www.youtube.com/realmadrid" target="_blank"><img src="images/youtube_logo.png" width="40" height="40" alt="logo youtube"></a>
+        </div>
     </footer>
+    <div class="footercopy">
+        <p class="copy">Copyright© 2025. Designed by BORJU</p>
+    </div>
 </body>
 </html>
