@@ -3,6 +3,19 @@
      font-size: large;
 }
 
+a:hover{
+
+color:rgb(255, 153, 0) ;
+}
+
+a:visited{
+color: rgb(255, 230, 0);
+}
+
+a{
+    color:rgb(120, 113, 255);
+}
+
 .footercontacto{
     background-color:rgb(120, 113, 255);
     color:white;
@@ -15,6 +28,10 @@
     margin-left: 1%;
     padding-top:1%;
     padding-bottom: 1%;
+}
+
+.h3footer{
+    font-size:150%;
 }
 
 #contacto{
@@ -38,6 +55,7 @@
     height:20%;
     margin-left:10%;
     margin-right:10%;
+    padding-top:1%;
     background-color:rgb(255, 255, 255);
     border-top-right-radius: 20%;
     border-bottom-left-radius: 20%;
@@ -92,11 +110,20 @@ border-top-left-radius: 20%;
 .enlaces {
     background-image: url("images/champions.png");
     background-color:rgb(255, 255, 255);
+    color:rgb(120, 113, 255);
     width: 30%;
     height: 30%;
     margin-left:4%;
     border-top-right-radius: 20%;
     border-bottom-left-radius: 20px; 
+    list-style-type: none;
+    padding-top: 1%;
+    padding-bottom:1%;
+}
+
+.bernabeu{
+    list-style-type: none;
+    margin-left:150%;
 }
 
 .navheader{
@@ -110,6 +137,7 @@ border-top-left-radius: 20%;
     margin-right:1%;
     margin-top: 15px;
     margin-bottom:15px;
+    display:flex;
 
 }
 
