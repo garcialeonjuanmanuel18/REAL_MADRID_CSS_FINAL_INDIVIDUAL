@@ -9,9 +9,9 @@
 <body>
     <header>
         <!-- título, logo y frase célebre -->
-        <h1><b>Real Madrid FanPage</b></h1>
+        <h1 class="h1header">Real Madrid FanPage</h1>
             <img src="images/real_madrid_logo.png" width="100" height="150" alt="logo madrid">
-                <br><h2><b><i>Historia que tú hiciste, historia por hacer</i></b></h2></br>
+                <h2 class="h2header">Historia que tú hiciste, historia por hacer</h2>
                     <!-- audio reproduciéndose en bucle -->
                     <audio src="media/madridpiano.mp3" autoplay></audio>
     </header>
@@ -29,11 +29,13 @@
         </div>
     </nav>
     <section>
-        <h3>¡¡Gana una camiseta con nosotros!!</h3>
+        <nav class="encabezadoformulario">
+            <h3>¡¡Gana una camiseta con nosotros!!</h3>
             <p>Rellena este formulario para participar en un sorteo a nivel nacional de una camiseta personalizada del madrid de la temporada 25/26</p>
+        </nav>
                 <article>
                     <form>     
-                        <fieldset>
+                        <fieldset class="informacionpersonal">
                             <!-- dividimos el formulario en cajas según el contenido -->
                             <legend><b>Información básica</b></legend>
                                 <!-- inputs básicos como text o tel -->
@@ -128,7 +130,7 @@
                             <label for="reset"></label>
                                 <input type="reset" name="reset" value="Limpiar selección" required>
                         </fieldset>
-    </form>
+                </form>
             </article>
     </section>
     <!-- contacto con correo, teléfono y enlaces insertados en imágenes -->
